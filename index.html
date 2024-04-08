@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joris vezba</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <form action="" class="form">
+      <h1>Rezervacija smestaja</h1>
+      <div class="container1">
+        <div class="lbls1">
+          <label for="name" id="hotel-lbl">Hotel</label>
+          <br />
+          <label for="email">Soba</label>
+          <br />
+        </div>
+        <div class="inputs1">
+          <select name="hoteli" id="hoteli"></select>
+          <br />
+          <select name="soba" id="sobe"></select>
+          <br />
+        </div>
+        <div class="lbls2">
+          <label for="datumOd" id="datumOd-lbl">Datum od</label>
+          <br />
+          <label for="datumDo">Datum do</label>
+          <br />
+        </div>
+        <div class="inputs2">
+          <input type="date" id="datumOd" />
+          <br />
+          <input type="date" id="datumDo" />
+          <br />
+        </div>
+      </div>
+      <div class="dodatne">
+        <h3>Dodatne opcije</h3>
+        <div class="obrok">
+          <input type="checkbox" id="dorucak" />
+          <label for="dorucak">Dorucak</label>
+
+          <br />
+          <input type="checkbox" id="rucak" />
+          <label for="rucak">Rucak</label>
+
+          <br />
+          <input type="checkbox" id="vecera" />
+          <label for="Vecera">Vecera</label>
+
+          <br />
+        </div>
+      </div>
+      <div class="napomena-container">
+        <p>Napomena</p>
+        <textarea name="napomena" id="napomena" cols="30" rows="10"></textarea>
+        <button type="submit" id="submit">Rezervisi</button>
+      </div>
+    </form>
+    <div class="rezervacije">
+      <h1>Rezervacije</h1>
+      <table class="table">
+        <tr id="table-row">
+          <th>Hotel</th>
+          <th>Soba</th>
+          <th>Datum od</th>
+          <th>Datum do</th>
+        </tr>
+        <tbody class="t-body"></tbody>
+      </table>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
